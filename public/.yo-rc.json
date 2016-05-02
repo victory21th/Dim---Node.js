@@ -1,0 +1,57 @@
+{
+  "generator-cg-angular": {
+    "uirouter": true,
+    "partialDirectory": "partial/",
+    "modalDirectory": "modals/",
+    "directiveDirectory": "directive/",
+    "filterDirectory": "filter/",
+    "serviceDirectory": "service/",
+    "inject": {
+      "js": {
+        "file": "templates/layouts/master.dust",
+        "marker": "<!-- Add New Component JS Above -->",
+        "template": "<script src=\"<%= filename %>\"></script>"
+      },
+      "less": {
+        "relativeToModule": true,
+        "file": "<%= module %>.less",
+        "marker": "/* Add Component LESS Above */",
+        "template": "@import \"<%= filename %>\";"
+      }
+    },
+    "modules": [
+      {
+        "name": "account",
+        "file": "app/account/account.js"
+      },
+      {
+        "name": "charts",
+        "file": "app/charts/charts.js"
+      },
+      {
+        "name": "core",
+        "file": "app/core/core.js"
+      },
+      {
+        "name": "dashboards",
+        "file": "app/dashboards/dashboards.js"
+      },
+      {
+        "name": "files",
+        "file": "app/files/files.js"
+      },
+      {
+        "name": "home",
+        "file": "app/home/home.js"
+      },
+      {
+        "name": "members",
+        "file": "app/members/members.js"
+      },
+      {
+        "name": "settings",
+        "file": "app/settings/settings.js"
+      }
+    ]
+  }
+}
